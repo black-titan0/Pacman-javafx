@@ -1,0 +1,54 @@
+.text-field{
+    -fx-font-family: "DePixel";
+    -fx-text-fill: cyan;
+    -fx-border-color: rgba(82, 103, 253, 0.58);
+    -fx-border-width: 3px;
+    -fx-pref-width: 340px;
+    -fx-pref-height: 72px;
+    -fx-border-style: dashed;
+    -fx-background-color: black;
+    -fx-translate-y: 45;
+}
+.text-field:hover{
+    -fx-text-fill: cyan;
+    -fx-border-color: cyan;
+    -fx-border-width: 4px;
+    -fx-pref-width: 350px;
+    -fx-pref-height: 74px;
+}
+.text-field:focused{
+    -fx-text-fill: cyan;
+    -fx-border-color: rgba(82, 103, 253, 0.58);
+    -fx-border-width: 3px;
+    -fx-pref-width: 340px;
+    -fx-pref-height: 72px;
+}
+.label{
+    -fx-text-fill: #5267fd;
+    -fx-background-color: black;
+    -fx-border-color: black;
+    -fx-border-width: 3;
+    -fx-font-size: 18;
+    -fx-translate-y: -45;
+    -fx-translate-x: -120;
+    -fx-font-family: "DePixel";
+
+}
+#confirmRegisterButton{
+    -fx-translate-y: -30;
+}
+#backButton{
+    -fx-translate-y: -30;
+}
+#confirmLoginButton {
+    -fx-translate-x: 6;
+}
+#inputs {
+    -fx-translate-y: -30;
+}
+#LoginLabel{
+    -fx-text-fill: cyan;
+    -fx-translate-y: 25;
+    -fx-translate-x: 145;
+    -fx-font-size: 25;
+}

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.shape.Rectangle?>
+<Pane xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="view.Game"
+      prefHeight="480.0" prefWidth="480.0">
+    <BorderPane>
+
+        <center>
+            <HBox spacing="10">
+                <GridPane fx:id="graphicalMaze" alignment="CENTER">
+
+                </GridPane>
+                <VBox spacing="10">
+                    <Label fx:id="score" textFill="azure" text="SCORE"/>
+                    <HBox spacing="10">
+                        <ImageView fx:id="heart1fxml">
+                            <Image url="@../images/HEART.png">
+                            </Image>
+                        </ImageView>
+                        <ImageView fx:id="heart2fxml">
+                            <Image url="@../images/HEART.png">
+                            </Image>
+                        </ImageView>
+                        <ImageView fx:id="heart3fxml">
+                            <Image url="@../images/HEART.png">
+                            </Image>
+                        </ImageView>
+                    </HBox>
+                    <HBox translateX="20" spacing="10">
+                        <ImageView fx:id="heart4fxml">
+                            <Image url="@../images/HEART.png">
+                            </Image>
+                        </ImageView>
+                        <ImageView fx:id="heart5fxml">
+                            <Image url="@../images/HEART.png">
+                            </Image>
+                        </ImageView>
+                    </HBox>
+                    <Button fx:id="pauseButton" onMouseClicked="#pause" text="pause"/>
+                    <Button fx:id="muteButton" onMouseClicked="#mute" text="mute"/>
+                </VBox>
+            </HBox>
+        </center>
+        <right>
+            <Rectangle width="40" height="40"/>
+        </right>
+        <bottom>
+            <HBox spacing="10">
+
+            </HBox>
+        </bottom>
+    </BorderPane>
+    <ImageView fx:id="pacmanImage">
+        <Image url="@../images/pacman-left.gif"/>
+    </ImageView>
+    <ImageView fx:id="greenGhostImage">
+        <Image url="@../images/ghost-blue.gif"/>
+    </ImageView>
+    <ImageView fx:id="blueGhostImage">
+        <Image url="@../images/ghost-green.gif"/>
+    </ImageView>
+    <ImageView fx:id="pinkGhostImage">
+        <Image url="@../images/ghost-orange.gif"/>
+    </ImageView>
+    <ImageView fx:id="orangeGhostImage">
+        <Image url="@../images/ghost-pink.gif"/>
+    </ImageView>
+    <ImageView fx:id="purpleGhostImage">
+        <Image url="@../images/ghost-purple.gif"/>
+    </ImageView>
+
+</Pane>

@@ -1,0 +1,59 @@
+.button{
+    -fx-font-family: "DePixel";
+    -fx-font-size: 18;
+    -fx-text-fill: white;
+    -fx-pref-width: 335px;
+    -fx-pref-height: 70px;
+    -fx-border-width: 3px;
+    -fx-border-style: dashed;
+    -fx-background-color: black;
+    -fx-border-color: #cf2d01;
+}
+.button:hover{
+    -fx-text-fill: cyan;
+    -fx-background-color: rgba(82, 103, 253, 0.58);
+    -fx-border-color: cyan;
+    -fx-border-width: 4px;
+    -fx-pref-width: 350px;
+    -fx-pref-height: 74px;
+}
+.button:pressed{
+    -fx-text-fill: cyan;
+    -fx-background-color: rgba(31, 39, 95, 0.83);
+    -fx-border-color: cyan;
+    -fx-border-width: 3px;
+    -fx-pref-width: 340px;
+    -fx-pref-height: 72px;
+}
+#PACMAN{
+    -fx-text-fill: #5267fd;
+    -fx-font-size: 18;
+    -fx-translate-y: -202px;
+    -fx-translate-x: 3.5;
+    -fx-font-family: "DePixel";
+
+}
+#buttonsVbox{
+    -fx-alignment: center;
+    -fx-translate-y: -20px;
+}
+#ghosts{
+    -fx-pref-width: 200px;
+    -fx-opacity: 10%;
+    -fx-pref-height: 50px;
+}
+#pane {
+    -fx-background-color: black;
+    -fx-translate-y: -50px ;
+}
+.circles{
+    -fx-background-color: white;
+}
+.rectangles{
+    -fx-background-color: white;
+    -fx-border-style: dashed;
+    -fx-border-color: cyan;
+}
+.root{
+    -fx-background-color: black;
+}

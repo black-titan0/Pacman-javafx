@@ -1,0 +1,34 @@
+.root{
+    -fx-background-color: black;
+}
+.button{
+    -fx-font-family: "DePixel";
+    -fx-text-fill: white;
+    -fx-border-width: 2px;
+    -fx-border-style: dashed;
+    -fx-background-color: black;
+    -fx-border-color: #cf2d01;
+    -fx-pref-height: 40;
+    -fx-pref-width: 120 ;
+}
+.button:hover{
+    -fx-text-fill: cyan;
+    -fx-background-color: rgba(82, 103, 253, 0.58);
+    -fx-border-color: cyan;
+    -fx-border-width: 2px;
+}
+.button:pressed{
+    -fx-text-fill: cyan;
+    -fx-background-color: rgba(31, 39, 95, 0.83);
+    -fx-border-color: cyan;
+    -fx-border-width: 2px;
+}
+#score{
+    -fx-text-fill: #bbff00;
+    -fx-background-color: black;
+    -fx-border-color: #56ff00;
+    -fx-border-width: 3;
+    -fx-font-size: 18;
+    -fx-font-family: "DePixel";
+
+}

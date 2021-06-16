@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="view.MainPage"
+            prefHeight="400.0" prefWidth="600.0">
+    <center>
+
+        <VBox alignment="CENTER">
+
+            <Rectangle stroke="#5267FD93" strokeLineCap="ROUND" layoutX="100" layoutY="100" width="320" height="50"/>
+            <HBox   translateX="100" alignment="CENTER" spacing="150" ><Label fx:id="userText" text="p"/> <Label fx:id="scoreText" text="p"/></HBox>
+
+            <VBox fx:id="buttonsVbox" spacing="10">
+                <HBox translateX="-34" alignment="CENTER" spacing="12">
+                    <Circle stroke="aquamarine" fill="azure" radius="10" />
+                    <Circle  stroke="aquamarine" fill="azure" radius="10" />
+                    <Button fx:id="registerButton" onMouseClicked="#openNewGame" text="New Game" prefWidth="100"
+                            prefHeight="30"/>
+                </HBox>
+                <HBox translateX="34" alignment="CENTER" spacing="12">
+                    <Button  fx:id="loginButton" onMouseClicked="#openSettingsPage" text="Settings"/>
+                    <Circle  stroke="aquamarine" fill="azure" radius="10" />
+                    <Circle  stroke="aquamarine" fill="azure" radius="10" />
+                </HBox>
+                <Button fx:id="logoutButton" onMouseClicked="#logoutClicked" text="Log Out"/>
+            </VBox>
+        </VBox>
+
+    </center>
+
+    <right>
+
+    </right>
+</BorderPane>

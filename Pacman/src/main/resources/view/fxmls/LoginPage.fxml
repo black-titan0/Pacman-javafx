@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.shape.Circle?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="view.LoginPage"
+            prefHeight="480.0" prefWidth="480.0">
+<top><Label fx:id="LoginLabel" text="Login Menu"/></top>
+    <center>
+        <VBox alignment="CENTER" spacing="10">
+            <VBox fx:id="inputs" alignment="CENTER">
+                <TextField fx:id="usernameInput"  maxWidth="335" maxHeight="70"/>
+                <Label text="Username"/>
+                <TextField fx:id="passwordInput" maxWidth="335" maxHeight="70"/>
+                <Label text="Password"/>
+            </VBox>
+            <HBox spacing="12">
+                <Circle translateX="6" translateY="23" stroke="aquamarine" fill="azure" radius="10"/>
+                <Circle translateX="6" translateY="23" stroke="aquamarine" fill="azure" radius="10"/>
+                <Button fx:id="confirmLoginButton" onMouseClicked="#openMainMenu" text="Login!"/>
+            </HBox>
+            <Button fx:id="loginBackButton" onMouseClicked="#openFirstPage" text=" >- Back"/>
+        </VBox>
+    </center>
+
+</BorderPane>

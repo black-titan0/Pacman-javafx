@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.shape.Circle?>
+<StackPane fx:id="stackPane" xmlns:fx="http://javafx.com/fxml"
+           fx:controller="view.FirstPage"
+           prefHeight="480.0" prefWidth="480.0">
+    <BorderPane fx:id="pane" xmlns="http://javafx.com/javafx">
+        <center>
+
+            <VBox alignment="CENTER">
+
+                <ImageView>
+                    <Image fx:id="ghosts" url="@../images/ghosts-talking.gif"/>
+                </ImageView>
+                <Label fx:id="PACMAN" text="PACMAN"/>
+                <VBox fx:id="buttonsVbox" spacing="10">
+
+                   <HBox translateX="-34" alignment="CENTER" spacing="12">
+                       <Circle  stroke="aquamarine" fill="azure" radius="10" />
+                       <Circle  stroke="aquamarine" fill="azure" radius="10" />
+                       <Button fx:id="registerButton" onMouseClicked="#openRegisterPage" text="Register" prefWidth="100"
+                            prefHeight="30"/>
+                   </HBox>
+                    <HBox translateX="34" alignment="CENTER" spacing="12">
+                        <Button  fx:id="loginButton" onMouseClicked="#openLoginPage" text="Login"/>
+                        <Circle  stroke="aquamarine" fill="azure" radius="10" />
+                        <Circle  stroke="aquamarine" fill="azure" radius="10" />
+                    </HBox>
+                    <Button onMouseClicked="#exitClicked" text="Exit"/>
+                </VBox>
+            </VBox>
+
+        </center>
+
+        <right>
+
+        </right>
+
+
+    </BorderPane>
+</StackPane>

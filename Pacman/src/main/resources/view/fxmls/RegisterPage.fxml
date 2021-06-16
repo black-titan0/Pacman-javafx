@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="view.RegisterPage"
+            prefHeight="480.0" prefWidth="480.0">
+    <center>
+        <VBox alignment="CENTER" spacing="10">
+            <TextField fx:id="registerUsernameInput" maxWidth="335" maxHeight="70"/>
+            <Label text="Username"/>
+            <TextField fx:id="registerPasswordInput" maxWidth="335" maxHeight="70"/>
+            <Label text="Password"/>
+            <HBox translateY="-23" translateX="-8" spacing="12" alignment="CENTER_RIGHT">
+                <ImageView translateX="30">
+                    <Image fx:id="pacmanImage" url="@../images/pacman2.gif"/>
+                </ImageView>
+                <Circle stroke="aquamarine" fill="azure" radius="10"/>
+                <Circle stroke="aquamarine" fill="azure" radius="10"/>
+                <Circle stroke="aquamarine" fill="azure" radius="10"/>
+                <Circle stroke="aquamarine" fill="azure" radius="10"/>
+                <Circle stroke="aquamarine" fill="azure" radius="10"/>
+                <Circle stroke="aquamarine" fill="azure" radius="10"/>
+                <Circle stroke="aquamarine" fill="azure" radius="10"/>
+                <Circle stroke="aquamarine" fill="azure" radius="10"/>
+            </HBox>
+            <Button fx:id="confirmRegisterButton" onMouseClicked="#registerUser" text="Register!"/>
+            <Button fx:id="backButton" onMouseClicked="#openFirstPage" text="Back ->"/>
+        </VBox>
+    </center>
+
+</BorderPane>
